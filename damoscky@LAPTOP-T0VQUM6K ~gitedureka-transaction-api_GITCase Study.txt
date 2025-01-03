@@ -1,0 +1,88 @@
+damoscky@LAPTOP-T0VQUM6K:~$ git clone https://github.com/Adedamola29/edureka-transaction-api.git
+Cloning into 'edureka-transaction-api'...
+warning: You appear to have cloned an empty repository.
+damoscky@LAPTOP-T0VQUM6K:~$ ls
+ade_keypair2.pem                  data-engineer-handbook  edureka-transaction-api  learnlinux  versioncontrol
+ade_keypair2.pem:Zone.Identifier  devfolder               git                      untracked
+damoscky@LAPTOP-T0VQUM6K:~$ ls-a
+ls-a: command not found
+damoscky@LAPTOP-T0VQUM6K:~$ ls - a
+ls: cannot access '-': No such file or directory
+ls: cannot access 'a': No such file or directory
+damoscky@LAPTOP-T0VQUM6K:~$ git branch
+fatal: not a git repository (or any of the parent directories): .git
+damoscky@LAPTOP-T0VQUM6K:~$ cd git
+damoscky@LAPTOP-T0VQUM6K:~/git$ git branch
+  dev
+* main
+damoscky@LAPTOP-T0VQUM6K:~/git$ git clone https://github.com/Adedamola29/edureka-transaction-api.git
+Cloning into 'edureka-transaction-api'...
+warning: You appear to have cloned an empty repository.
+damoscky@LAPTOP-T0VQUM6K:~/git$ echo "# edureka-transaction-api" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Adedamola29/edureka-transaction-api.git
+git push -u origin main
+Reinitialized existing Git repository in /home/damoscky/git/.git/
+[main 6fcfb46] first commit
+ 1 file changed, 1 insertion(+)
+error: remote origin already exists.
+Username for 'https://github.com': Adedamola29
+Password for 'https://Adedamola29@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 371 bytes | 371.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Adedamola29/Devops2.git
+   cd4dd8b..6fcfb46  main -> main
+branch 'main' set up to track 'origin/main'.
+damoscky@LAPTOP-T0VQUM6K:~/git$ git clone https://github.com/Adedamola29/edureka-transaction-api.git
+fatal: destination path 'edureka-transaction-api' already exists and is not an empty directory.
+damoscky@LAPTOP-T0VQUM6K:~/git$ ls
+README.md  ade.txt  edureka-transaction-api  file1.txt  olu.txt
+damoscky@LAPTOP-T0VQUM6K:~/git$ cd edureka-transaction-api
+damoscky@LAPTOP-T0VQUM6K:~/git/edureka-transaction-api$ ls
+damoscky@LAPTOP-T0VQUM6K:~/git/edureka-transaction-api$ ls -a
+.  ..  .git
+damoscky@LAPTOP-T0VQUM6K:~/git/edureka-transaction-api$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+damoscky@LAPTOP-T0VQUM6K:~/git/edureka-transaction-api$ touch gittraining.txt jenkins.txt docker.txt
+damoscky@LAPTOP-T0VQUM6K:~/git/edureka-transaction-api$ git add .
+damoscky@LAPTOP-T0VQUM6K:~/git/edureka-transaction-api$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   docker.txt
+        new file:   gittraining.txt
+        new file:   jenkins.txt
+
+damoscky@LAPTOP-T0VQUM6K:~/git/edureka-transaction-api$ git commit -m "My first Commit"
+[main (root-commit) 762e860] My first Commit
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 docker.txt
+ create mode 100644 gittraining.txt
+ create mode 100644 jenkins.txt
+damoscky@LAPTOP-T0VQUM6K:~/git/edureka-transaction-api$ git push origin
+Username for 'https://github.com': Adedamola29
+Password for 'https://Adedamola29@github.com':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 242 bytes | 242.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Adedamola29/edureka-transaction-api.git
+ * [new branch]      main -> main
+damoscky@LAPTOP-T0VQUM6K:~/git/edureka-transaction-api$ git log --oneline
+762e860 (HEAD -> main, origin/main) My first Commit
+damoscky@LAPTOP-T0VQUM6K:~/git/edureka-transaction-api$
